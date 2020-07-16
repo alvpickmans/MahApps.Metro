@@ -91,6 +91,12 @@ namespace MetroDemo
                                       new Uri("pack://application:,,,/MahApps.Metro.Demo;component/Assets/Photos/Privat.jpg", UriKind.RelativeOrAbsolute),
                                       new Uri("pack://application:,,,/MahApps.Metro.Demo;component/Assets/Photos/Settings.jpg", UriKind.RelativeOrAbsolute)
                                   };
+            this.FlipViewImages2 = new Uri[]
+                                  {
+                                      new Uri("pack://application:,,,/MahApps.Metro.Demo;component/Assets/Photos/Home.jpg", UriKind.RelativeOrAbsolute),
+                                      new Uri("pack://application:,,,/MahApps.Metro.Demo;component/Assets/Photos/Privat.jpg", UriKind.RelativeOrAbsolute),
+                                      new Uri("pack://application:,,,/MahApps.Metro.Demo;component/Assets/Photos/Settings.jpg", UriKind.RelativeOrAbsolute)
+                                  };
 
             this.BrushResources = this.FindBrushResources();
 
@@ -464,6 +470,7 @@ namespace MetroDemo
         }
 
         public Uri[] FlipViewImages { get; set; }
+        public Uri[] FlipViewImages2 { get; set; }
 
         public class RandomDataTemplateSelector : DataTemplateSelector
         {
